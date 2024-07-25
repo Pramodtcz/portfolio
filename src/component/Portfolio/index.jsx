@@ -40,9 +40,9 @@ function Portfolio() {
     <>
       <section className="py-14 px-4">
         <div className="mx-auto max-w-7xl">
-          <div class="grid md:grid-cols-3 gap-[24px]">
-            {portfolioBox.map((portfolio) => (
-              <div onClick={()=>(<Modal img={portfolio.portfolioImage} isOpen={isOpen} />)}>
+          <div className="grid md:grid-cols-3 gap-[24px]">
+            {portfolioBox.map((portfolio, index) => (
+              <div key={index} onClick={()=>(<Modal img={portfolio.portfolioImage} isOpen={isOpen} />)}>
                 <figure className="mb-[24px]">
                   <img src={portfolio.portfolioImage} alt="" />
                 </figure>

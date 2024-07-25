@@ -26,8 +26,8 @@ function Partner() {
         >
 
           {
-            partnerLogo.map( (logo)=>(
-                <SwiperSlide>
+            partnerLogo.map( (logo, index)=>(
+                <SwiperSlide key={index}>
                     <img src={`./images/${logo}`} alt="" />
                 </SwiperSlide>
 

@@ -32,7 +32,7 @@ function Home() {
 
         {
           bannerData.map( (item, index)=> (
-            <SwiperSlide>
+            <SwiperSlide key={index}>
               <Banner 
                 title={item.title}
                 heading={item.heading}

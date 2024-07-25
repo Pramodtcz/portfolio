@@ -22,9 +22,9 @@ function Services() {
   return (
     <section className="bg[#F3EFEC] py-14 px-4">
       <div className="mx-auto max-w-7xl">
-        <div class="grid md:grid-cols-3 gap-[24px]">
-          {serviceBox.map((serivces) => (
-            <div className="text-center">
+        <div className="grid md:grid-cols-3 gap-[24px]">
+          {serviceBox.map((serivces, index) => (
+            <div key={index} className="text-center">
               <figure className="mb-[42px]">
                 <img className="mx-auto" src={serivces.imgBox} alt="" />
               </figure>
